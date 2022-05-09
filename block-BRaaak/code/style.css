@@ -1,0 +1,201 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* custom styles */
+.container {
+  max-width: 500px;
+  width: 100%;
+  padding: 2rem 3rem;
+  border: 2px solid rgb(0, 0, 0);
+  margin: 0 auto;
+  background-color: rgb(251, 223, 227);
+}
+.heading {
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+  margin: 1rem 0rem;
+}
+.md-heading {
+  color: rgb(194, 85, 103);
+  font-size: 2rem;
+  margin: 1rem 0rem;
+}
+.paragraph {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.flex {
+  display: flex;
+}
+.logos {
+  margin-top: 1rem;
+}
+.logos i,
+.logos span {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  opacity: 0.4;
+}
+.logos i:nth-child(n) {
+  margin-left: 1rem;
+}
+.tag {
+  background-color: rgb(194, 85, 103);
+  color: white;
+  font-size: 2rem;
+}
+.figure {
+  position: relative;
+}
+.figure img {
+  width: 100%;
+}
+.flex-text {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.figure {
+  position: relative;
+}
+.bottom {
+  position: absolute;
+  bottom: 0rem;
+  padding: 0.5rem;
+}
+.top {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+.article {
+  background-color: white;
+  padding: 1rem;
+}
