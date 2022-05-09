@@ -4,16 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
     <title>Basics of REact</title>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://kit.fontawesome.com/ef43d9bbc3.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
 <body>
-    <div id ="root"></div>
+  <div id ="root"></div>
     <script type="text/babel">
 
-     ReactDOM.render(h1,document.getElementById("root"));
+let cardInfo = {
+  title: 'City Lights in New York and udaipur',
+  date: new Date('2017-02-26'),
+  comments: 67,
+  subTitle: 'The city that never sleeps.',
+  description:
+    'New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.',
+  category: 'photos',
+  imageURL:
+    'https://images.unsplash.com/photo-1610874933184-7728fd666162?ixid=MXwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60',
+    };
+
+    let monthNames = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July',
+        'August',
+        'September',
+        'October',
+        'November',
+        'December',
+      ];
+    
+      let ui=(
+        <div className= "article">
+        <div className="image-panel">
+            <img className="image"src={cardInfo.imageURL}/>
+            <p className="tag upper"> 
+                {cardInfo.date.getDate()}{' '}
+                {monthNames[cardInfo.date.getMonth()].slice(0, 3)}</p>
+            <p className="tag bottom">{cardInfo.category}</p>
+        </div>
+        <div className="article-panel">
+            <h1>{cardInfo.title}</h1>
+            <h2>{cardInfo.subTitle}</h2>
+            <p>{cardInfo.description}</p>
+            <div className="time-and-comments">
+                <span>6 minutes ago</span>
+                <span> comments</span>
+            </div>
+        </div>
+    </div>   
+      )
+     ReactDOM.render(ui,document.getElementById("root"));
     </script>
     
 </body>
